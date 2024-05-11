@@ -37,7 +37,7 @@ address {
 }
 
 .container {
-  max-width: 320px;
+  max-width: 100%;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -792,4 +792,5 @@ img {
 /*!-------/PORTFOLIO-------**/
 
 /*!-------FOOTER-------**/
+
 /*!-------/FOOTER-------**/
