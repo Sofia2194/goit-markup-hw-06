@@ -71,8 +71,8 @@ address {
 }
 
 .section-paddings {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 img {
@@ -199,7 +199,6 @@ img {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-bottom: 12px;
   }
   .address-imet {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -274,9 +273,6 @@ img {
   .mobil-nav-menu-list:focus {
     color: #404bbf;
   }
-  .mobil-nav-menu-text {
-    padding-bottom: 168px;
-  }
   .mobil-address-link {
     color: var(--SLATE, #434455);
     font-size: 20px;
@@ -335,7 +331,6 @@ img {
 @media only screen and (max-width: 767px) {
   .hero {
     width: 320px;
-    height: 432px;
     max-width: 320px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -409,7 +404,7 @@ img {
 
 @media only screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    max-width: 768px;
     height: 436px;
     padding: 112px 0;
     max-width: 768px;
@@ -494,12 +489,10 @@ img {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
 }
 .features-item-text {
   color: var(--SLATE, #434455);
   font-size: 16px;
-  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -515,7 +508,6 @@ img {
   }
   .features-item {
     width: 356px;
-    margin-bottom: 72px;
   }
   .features-item-text {
     align-items: flex-start;
@@ -530,7 +522,6 @@ img {
     width: 264px;
     height: 112px;
     flex-shrink: 0;
-    margin-bottom: 8px;
     padding: 24px 100px 24px 100px;
     display: flex;
     align-items: center;
@@ -547,7 +538,7 @@ img {
     line-height: 1.2;
   }
   .features-item-text {
-    font-weight: 500;
+    font-weight: 400;
   }
 }
 
@@ -635,15 +626,19 @@ img {
   padding-bottom: 8px;
 }
 
+@media only screen and (max-width: 767px){
+  .team-list{
+    justify-content: center;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .team-list {
     gap: 24px;
     justify-content: center;
   }
-  .team-item {
-    margin-bottom: 64px;
-  }
 }
+
 @media only screen and (min-width: 1157px) {
   .team-list {
     display: flex;
@@ -818,6 +813,7 @@ img {
   }
   .footer-social {
     align-items: flex-start;
+    justify-content: center;
   }
   .footer-form {
     display: flex;
@@ -825,6 +821,7 @@ img {
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+    justify-content: center;
   }
   .footer-input{
     width: 288px;
@@ -943,8 +940,7 @@ img {
     width: 264px;
   }
   .footer-div-logo {
-    margin-right: 24px;
-    margin-left: 108px;
+    
   }
   .footer-div {
     display: flex;
@@ -952,11 +948,9 @@ img {
     flex-wrap: wrap;
   }
   .footer-div-conteiner{
-    padding-top: 72px;
-    margin-right: 585px;
-    margin-left: 108px;
-   }
-   .footer-form {
+    margin-left: 80px;
+  }
+  .footer-form {
     display: flex;
     gap: 24px;
   }
@@ -966,20 +960,18 @@ img {
 }
 @media only screen and (min-width: 1157px){
   .footer {
+    background: var(--NAVY-BLUE, #2e2f42);
     height: 312px;
     padding: 100px 0;
-    align-items: center;
-    display: inline-flex;
     width: auto;
   }
   .footer-div {
     display: flex;
     align-items: baseline;
     flex-wrap: nowrap;
-    margin-right: 156px;
   }
   .footer-div-logo {
-    margin-right: 120px;
+    margin-right: 80px;
   }
   .footer-social {
     display: flex;
@@ -1200,7 +1192,7 @@ img {
     max-width: 256px;
   }
   .contacts-form-input{
-    width: 256px;
+    max-width: 100%;
     padding-left: 34px;
   }
   .contacts-div-form {
